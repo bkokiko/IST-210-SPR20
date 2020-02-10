@@ -1,0 +1,350 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Group Assignment#1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMaFL6KtMmlcivfH0aQ9Nva",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/bkokiko/IST-210-SPR20/blob/master/Group_Assignment_1.ipynb/Group%20Assign1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "mfHdUZpVR5Pp",
+        "colab_type": "text"
+      },
+      "source": [
+        "#IST 210 Group Project Assignment #1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zvw5DVbrSCoF",
+        "colab_type": "text"
+      },
+      "source": [
+        "##Idea #1 Gaming"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0KUnAGVkSFb0",
+        "colab_type": "text"
+      },
+      "source": [
+        "For one of our unique ideas, we want to create a database that holds information for pc gaming platforms. We intend to create this database as a use for gamers to track the games they play, created by who, personal high scores and other in-game achievements, any purchases of games, and what other games are within the system. The goal of this database is to allow individuals to access their gaming histories and achievements as well as any purchases they might have made, and allow publishers to track their sales and evaluations from gamers. For normal users, this will allow individuals to see what they have in their inventory, what they have completed within each game, and what their friends are playing; for publishers, this will allow them to have a better look of their products. This is not a super unique idea as databases like steam and origin exist.  \n",
+        "\n",
+        "Publisher: The publisher of games, including publisher ID, name, official website, games it published, etc. They sell games on the platform.\n",
+        "Games: The information of games, including game ID, name, type of game, price, publisher, releasing date, and ratings. The publishers can make changes to some of the data like types and price, while personal users can add ratings to it.\n",
+        "Account: The information of personal accounts, including their account ID, nickname, password, friend, and email address. It’s the method for normal users to get access to the platform/database.\n",
+        "Transaction: It saves the transaction history of users purchasing games, including transaction ID, time of purchase, amount of money, and payment type. Normal users can see their purchasing history, and publishers can track their sellings.\n",
+        "Inventory: The games that users own, including game ID, play time, achievements owns, rating of the game, and friends who also own the game. Players can track their gaming history and share with friends.\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UDwwPyR-WBIX",
+        "colab_type": "text"
+      },
+      "source": [
+        "![alt text](https://raw.githubusercontent.com/bkokiko/IST-210-SPR20/master/Group%20Assign1/Screen%20Shot%202020-02-09%20at%2011.05.11%20PM.png)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "rh3KPtCBS0PD",
+        "colab_type": "text"
+      },
+      "source": [
+        "##Idea #2 Banking Database"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "rNDRApPJT7vU",
+        "colab_type": "text"
+      },
+      "source": [
+        "Personal information\n",
+        "Idea: Trained agents will have payment devices outsourced to trusted vendors to confirm payment of items through biometric verification of identity (BAXI, 256). \n",
+        "\n",
+        "Uniqueness: The payment is processed through an encrypted service provider for thorough verification by mobile agents. \n",
+        "\n",
+        "Product brand: The idea is a collection trial data security for travelers that looks promising for credit card security (BAXI, 256). \n",
+        "\n",
+        "Typical transaction: On a regular day, a traveler is required to register their arrival at banking agent who will cater for the credit card needs within the visit. \n",
+        "\n",
+        "Credit score\n",
+        "Idea: Limit the credit allowance for travelers (BAXI, 256). \n",
+        "\n",
+        "Uniqueness: The payment process must be confirmed between agents and vendors through a secure terminal. The traveler will be required to hold their finger print to the scanner to confirm their request. \n",
+        "\n",
+        "Product brand: This is borrowed from local banking businesses (BAXI, 256).\n",
+        "\n",
+        "Typical transaction: A secondary entry for digit code will be installed for travelers who want to borrow more than their limit. \n",
+        "\n",
+        "Account Balance\n",
+        "Idea: A regular statement for any transaction made from the credit card (BAXI, 256).\n",
+        "\n",
+        "Uniqueness: The traveler is alerted immediately before a purchase to ensure the request is accurate.\n",
+        "\n",
+        "Product brand: Mastercard provides a similar concept for securing identity of travelers (BAXI, 256).\n",
+        "\n",
+        "Typical transaction: After the first security code entry a secondary entry box will appear will becomes confirmed on registered devices.\n",
+        "\n",
+        "\n",
+        "Purchasing Patterns\n",
+        "Idea: Suspicious change in spending activity will be alerted to the traveler (BAXI, 256). \n",
+        "\n",
+        "Uniqueness: Unauthorized spending will be stopped before approval because funds can be transferred until confirm from agents (BAXI, 256).\n",
+        "\n",
+        "Product brand: The idea is used by popular banks to prevent fraud of credit card in public centers.\n",
+        "\n",
+        "Typical transaction: Suspicious charges within 24 hours will alert and block the credit card use while the perpetrator is apprehended.\n",
+        "\n",
+        "Banking Company\n",
+        "Idea: Partnership with a bank that offer additional encrypted security will provide in a single access point for travelers. The bank will provide the agents with mobile secure devices that prevents theft of information and funds. \n",
+        "\n",
+        "Uniqueness: Only the registered devices with encryption provides access and are viable through mobile agents (BAXI, 256). \n",
+        "\n",
+        "Product brand: Most banking companies have introduced product to ensure safety of travelers with credit cards (BAXI, 256).\n",
+        "\n",
+        "Typical transaction: A traveler confirms the identity of the agent before proceeding to register with encrypted device. \n",
+        "Work Cited: BAXI, NISHANT. 101 Powerful Tips for Legally Improving Your Credit Score. Hanover, NH: Scribal, 2019. Internet resource.\n",
+        "Tables:\n",
+        "\n",
+        "Personal Info\n",
+        "\n",
+        "\n",
+        "Name\n",
+        "\n",
+        "\n",
+        "DOB\n",
+        "\n",
+        "\n",
+        "Address\n",
+        "\n",
+        "\n",
+        "Account ID\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Credit\n",
+        "\n",
+        "\n",
+        "Personal info\n",
+        "\n",
+        "\n",
+        "Card #\n",
+        "\n",
+        "\n",
+        "Credit available\n",
+        "\n",
+        "\n",
+        "Account info\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Purchasing Patterns\n",
+        "\n",
+        "\n",
+        "Credit Card\n",
+        "\n",
+        "\n",
+        "History\n",
+        "\n",
+        "\n",
+        "Account ID\n",
+        "\n",
+        "\n",
+        "Personal info\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Bank\n",
+        "\n",
+        "\n",
+        "Transaction records\n",
+        "\n",
+        "\n",
+        "ID #\n",
+        "\n",
+        "\n",
+        "Credit lines\n",
+        "\n",
+        "\n",
+        "Account info\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Agents\n",
+        "\n",
+        "\n",
+        "Bank\n",
+        "\n",
+        "\n",
+        "Credit \n",
+        "\n",
+        "\n",
+        "ID #\n",
+        "\n",
+        "\n",
+        "Account ID\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "guj98vznWGkd",
+        "colab_type": "text"
+      },
+      "source": [
+        "![alt text](https://raw.githubusercontent.com/bkokiko/IST-210-SPR20/master/Group%20Assign1/Screen%20Shot%202020-02-09%20at%2011.03.01%20PM.png)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xC31AMIRUS3q",
+        "colab_type": "text"
+      },
+      "source": [
+        "##Idea#3 Nba Database"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qRdzTb55U95F",
+        "colab_type": "text"
+      },
+      "source": [
+        "For one of our unique ideas, we want to create a database that analyzes various components of the National Basketball Association. We intend to create this database as a use for owners and general managers for each given team as a way to track five different entities that could help manage the team’s players, track their statistics, compare schedules, track attendance and follow incoming revenue. The goal of this database is to make these types of information available and ready to use as quickly as possible, so the management team for their respective NBA teams can make decisions various things like lineups for the games, when to schedule games, how to adjust the lineups to better suit the teams success, and changes to the arena itself to increase attendance and revenue. What makes this idea unique is that today no such database exists. Some databases exist for the individual entities such as Statistics trackers. Our database plans to create something that combines these entities into one easy, accessible place, so as much information is available to help making a decision about the welfare of the team. A basic day in this business will go a bit something like this: Each entity will act as a sort of ‘department’ that has a team dedicated to tracking and analyzing its respective entity, and once that occurs, those analyses will be uploaded to the main database(which is the one the end user will see). Finally, there will be an extra team that is dedicated to ‘cleaning up and refining’ the main/final database that will actually be used by the owners of the respective NBA teams.\n",
+        "Tables:\n",
+        "\n",
+        "Team:\n",
+        "\n",
+        "\n",
+        "players\n",
+        "\n",
+        "\n",
+        "coaches\n",
+        "\n",
+        "\n",
+        "trainers\n",
+        "\n",
+        "\n",
+        "managers\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Players:\n",
+        "\n",
+        "\n",
+        "Name\n",
+        "\n",
+        "\n",
+        "Salary\n",
+        "\n",
+        "\n",
+        "Minutes\n",
+        "\n",
+        "\n",
+        "Statistics\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Statistics:\n",
+        "\n",
+        "\n",
+        "Points\n",
+        "\n",
+        "\n",
+        "Assists\n",
+        "\n",
+        "\n",
+        "Rebounds \n",
+        "\n",
+        "\n",
+        "Head to head\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "Schedule:\n",
+        "\n",
+        "\n",
+        "Dates\n",
+        "\n",
+        "\n",
+        "Venue\n",
+        "\n",
+        "\n",
+        "Attendance\n",
+        "\n",
+        "\n",
+        "managers\n",
+        "\n",
+        "\n",
+        "\n",
+        "Attendance:\n",
+        "\n",
+        "\n",
+        "Revenue\n",
+        "\n",
+        "\n",
+        "accomodations\n",
+        "\n",
+        "\n",
+        "Customers\n",
+        "\n",
+        "\n",
+        "Length Of Game\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5Rqc2ROnWqA3",
+        "colab_type": "text"
+      },
+      "source": [
+        "![alt text](https://raw.githubusercontent.com/bkokiko/IST-210-SPR20/master/Group%20Assign1/Screen%20Shot%202020-02-09%20at%2010.55.55%20PM.png)"
+      ]
+    }
+  ]
+}
